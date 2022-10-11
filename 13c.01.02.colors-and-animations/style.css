@@ -175,7 +175,7 @@ header button {
 /* product section */
 #product {
   padding: 5rem 3rem;
-  background-color: var(--color-light);
+  /*background-color: var(--color-light);*/
 }
 
 #product h2 {
@@ -253,11 +253,15 @@ header button {
   background-color: var(--color-dark);
 }
 
-.dark h2 {
+.dark h1, .dark h2, .dark h3 {
   color: var(--color-light);
 }
 
 .dark a {
+  color: var(--color-light);
+}
+
+.dark p {
   color: var(--color-light);
 }
 
