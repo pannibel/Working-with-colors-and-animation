@@ -1,6 +1,7 @@
 
 let body = document.querySelector("body");
 let header = document.querySelector("header");
+let highlight = document.querySelector(".highlight");
 let product = document.querySelector("#product");
 let button = document.querySelector("nav button");
 let isDark = false;
@@ -20,6 +21,10 @@ function darkMode() {
     console.log("dark mode");
     header.classList.add("dark");
     product.classList.add("dark");
+    button.textContent = "Light Mode";
+    highlight.classList.remove("highlight");
+    highlight.classList.add("darkhighlight");
+
     isDark = true;
 }
 
@@ -27,5 +32,8 @@ function lightMode() {
     console.log("light mode");
     header.classList.remove("dark");
     product.classList.remove("dark");
+    highlight.classList.remove("darkhighlight");
+    highlight.classList.add("highlight");
+    button.textContent = "Dark Mode";
     isDark = false;
 }

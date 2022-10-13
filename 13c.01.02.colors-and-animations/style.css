@@ -249,22 +249,6 @@ header button {
   color: var(--color-green);
 }
 
-.dark {
-  background-color: var(--color-dark);
-}
-
-.dark h1, .dark h2, .dark h3 {
-  color: var(--color-light);
-}
-
-.dark a {
-  color: var(--color-light);
-}
-
-.dark p {
-  color: var(--color-light);
-}
-
 /* request section */
 #request {
   display: flex;
@@ -332,4 +316,64 @@ footer section div {
     line-height: 3.5rem;
   }
 
+}
+
+
+/* DARK MODE */
+
+.darkhighlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-purple);
+  color: var(--color-green);
+}
+
+.darkhighlight div {
+  width: 80vw;
+}
+
+.darkhighlight div h2 {
+  font-size: 5.005rem;
+  line-height: 6rem;
+  color: var(--color-green);
+}
+
+.darkhighlight a {
+  color: var(--color-green);
+}
+
+.darkhighlight a:hover {
+  color: var(--color-green);
+}
+
+.dark {
+  background-color: var(--color-dark);
+}
+
+.dark h1 {
+  color: var(--color-green);
+}
+
+.dark h2, .dark h3 {
+  color: var(--color-green);
+}
+
+.dark a {
+  color: var(--color-light);
+}
+
+.dark a:hover {
+  color: var(--color-green);
+}
+
+.dark p {
+  color: var(--color-light);
+}
+
+.dark button:hover {
+  background-color: var(--color-purple);
+  color: var(--color-light);
 }
